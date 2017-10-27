@@ -1,0 +1,178 @@
+\begin{titlepage}
+
+\begin{center}
+
+%% Extra whitespace at the top.
+\vspace*{2\bigskipamount}
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\LARGE\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \bigskip
+    \titlefont\titleshape\Large\@subtitle
+\fi
+\makeatother}
+
+\end{center}
+
+\cleardoublepage
+\thispagestyle{empty}
+
+\begin{center}
+
+%% The following lines repeat the previous page exactly.
+
+\vspace*{2\bigskipamount}
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\LARGE\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \bigskip
+    \titlefont\titleshape\Large\@subtitle
+\fi
+\makeatother}
+
+%% Uncomment the following lines to insert a vertically centered picture into
+%% the title page.
+%\vfill
+%\includegraphics{title}
+\vfill
+
+%% Apart from the names and dates, the following text is dictated by the
+%% promotieregelement.
+
+{\Large\titlefont\bfseries Proefschrift}
+
+\bigskip
+\bigskip
+
+ter verkrijging van de graad van doctor
+
+aan de Technische Universiteit Delft,
+
+op gezag van de Rector Magnificus prof.~ir.~K.C.A.M.~Luyben,
+
+voorzitter van het College voor Promoties,
+
+in het openbaar te verdedigen op dinsdag 1 januari 2015 om 10:00 uur
+
+\bigskip
+\bigskip
+
+door
+
+\bigskip
+\bigskip
+
+%% Print the full name of the author.
+\makeatletter
+{\Large\titlefont\bfseries\@firstname\ {\titleshape\@lastname}}
+\makeatother
+
+\bigskip
+\bigskip
+
+Fachlehrer für Mathematik und Physik, \\
+Eidgenössische Polytechnische Schule, Zürich, Zwitserland,
+
+geboren te Ulm, Duitsland.
+
+%% Extra whitespace at the bottom.
+\vspace*{2\bigskipamount}
+
+\end{center}
+
+\clearpage
+\thispagestyle{empty}
+
+%% The following line is dictated by the promotieregelement.
+\noindent Dit proefschrift is goedgekeurd door de
+
+%% List the promotors (supervisors).
+\medskip\noindent
+\begin{tabular}{l}
+    promotor: prof.\ dr.\ A.\ Kleiner \\
+    copromotor: dr.\ A.A.\ Aaronson
+\end{tabular}
+
+\bigskip
+\noindent Samenstelling promotiecommissie:
+
+%% List the committee members, starting with the Rector Magnificus and the
+%% promotor(s) and ending with the reserve members.
+\medskip\noindent
+\begin{tabular}{p{3cm}l}
+    Rector Magnificus, & voorzitter \\
+    Prof.\ dr.\ A.\ Kleiner, & Technische Universiteit Delft \\
+    Dr.\ A.A.\ Aaronson, & Technische Universiteit Delft \\
+
+    \medskip
+    \mbox{\emph{Onafhankelijke leden:}} & \\
+
+    Prof.\ dr.\ A.\ Jansen & Technische Universiteit Delft \\
+    % Special case, only for very long names
+    \mbox{Prof.\ dr.\ ir.\ A.B.C.D.\ van de Lange-Achternaam} & \\
+      & Technische Universiteit Delft \\
+    Prof.\.dr.\ N.\ Nescio & Politecnico di Milano, Itali\"e \\
+    Prof.\ dr.\ ir.\ J.\ Doe, & Technische Universiteit Delft, reservelid \\
+
+    \medskip
+    \mbox{\emph{Overige leden:}} & \\
+    Prof.\ dr.\ ir.\ J.\ de Wit, & Technische Universiteit Delft \\
+    Dr.\ ir.\ Q.\ de Zwart, & Technische Universiteit Eindhoven \\
+\end{tabular}
+
+%% Include the following disclaimer for committee members who have contributed
+%% to this dissertation. Its formulation is again dictated by the
+%% promotieregelement.
+\medskip
+\noindent Prof.\ dr.\ ir.\ J.\ de Wit heeft in belangrijke mate aan de totstandkoming van het proefschrift bijgedragen.
+
+%% Here you can include the logos of any institute that contributed financially
+%% to this dissertation.
+\vfill
+\begin{center}
+    \includegraphics[height=0.5in]{title/logos/tudelft}
+    \hspace{2em}
+    \includegraphics[height=0.5in]{title/logos/casimir} \\
+    \includegraphics[height=0.5in]{title/logos/fom}
+    \hspace{2em}
+    \includegraphics[height=0.5in]{title/logos/nwo}
+\end{center}
+\vfill
+
+\noindent
+\begin{tabular}{@{}p{0.2\textwidth}@{}p{0.8\textwidth}}
+    \textit{Keywords:} & \ldots \\[\medskipamount]
+    \textit{Printed by:} & Johannes Gutenberg \\[\medskipamount]
+    \textit{Front \& Back:} & Beautiful cover art that captures the entire content of this thesis in a single illustration.
+\end{tabular}
+
+\vspace{4\bigskipamount}
+
+\noindent Copyright \textcopyright\ 2015 by A.~Einstein
+
+%% Uncomment the following lines if this dissertation is part of the Casimir PhD
+%% Series, or a similar research school.
+%\medskip
+%\noindent Casimir PhD Series, Delft-Leiden 2015-01
+
+\medskip
+\noindent ISBN 000-00-0000-000-0
+
+\medskip
+\noindent An electronic version of this dissertation is available at \\
+\url{http://repository.tudelft.nl/}.
+
+\end{titlepage}
+

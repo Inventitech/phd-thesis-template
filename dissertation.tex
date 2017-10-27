@@ -1,0 +1,147 @@
+\documentclass{dissertation}
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\usepackage{graphicx}
+\usepackage{subfig}
+% declare the path(s) where your graphic files are
+\graphicspath{{watchdog-tse/figs/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage[bookmarks=false,hidelinks]{hyperref}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+% clever citation references
+\usepackage[noabbrev]{cleveref}
+\Crefname{enumi}{Step}{Steps}
+\crefname{enumi}{step}{steps}
+
+\usepackage{enumitem}
+%% \setlist{before=\setlength{\rightmargin}{0.17cm}}
+
+%% \setlist[enumerate]{
+%%   nolistsep,label=\arabic{*}),ref=\arabic{*},leftmargin=0.65cm,noitemsep
+%% }
+
+%% \setlist[itemize]{
+%%   nolistsep,label=\arabic{*}),ref=\arabic{*},noitemsep
+%% }
+
+\newlist{rqlist}{itemize}{2}
+\setlist[rqlist]{
+  nolistsep,leftmargin=1.65cm,rightmargin=0.9cm
+}
+
+\usepackage{tabularx}
+
+\usepackage{framed}
+\let\oldframed\framed
+\def\framed{\oldframed\noindent\ignorespaces}
+
+\usepackage{booktabs}
+
+\usepackage{relsize}
+\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+%\usepackage{flushend}
+%\AtEndDocument{\par\leavevmode}
+
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+%\usepackage[scaled=.90]{helvet}
+%\usepackage{courier}
+
+% number circles. They go well together with my favorite way of
+% labeling stuff in pictures.
+\usepackage{tikz}
+
+\usepackage{marvosym}
+\usepackage{pbox}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\newcommand{\var}[1]{{\ttfamily#1}}% variable
+
+\newcommand{\ahref}[2]{\href{#1}{\nolinkurl{#2}}}
+\newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.35pt}\scriptsize{\raisebox{-.4pt}{#1}}}}}
+
+\hyphenation{TestRoots WatchDog proj-ect proj-ects Ec-lipse two-fold clie-nts Mo-cki-to}
+
+\newcommand{\sparkline}[1]{$\vcenter{\hbox{\includegraphics[scale=0.04]{#1}}}$}
+
+\input{abbreviations}
+
+\begin{document}
+
+%% Specify the title and author of the thesis. This information will be used on
+%% the title page (in title/title.tex) and in the metadata of the final PDF.
+\title{An Empirical Evaluation Of Feedback-Driven Development}
+\author{Moritz Marc}{Beller}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+\include{title/title}
+
+%% The (optional) dedication can be used to thank someone or display a
+%% significant quotation.
+\dedication{\epigraph{I only like to give the maximum in everything I do. The maximum I have. The maximum I can give. I am not perfect. But if I do something, I do it best. And many people are not made like this. There are only few. But I like these few.}{Reinhold Messner}}
+
+\tableofcontents
+
+\include{summary/summary}
+\include{preface/preface}
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%% Turn on thumb indices.
+\thumbtrue
+
+\include{chapter-1/chapter-1}
+\include{watchdog-tse/paper}
+\include{conclusion/conclusion}
+\include{acks/acks}
+
+%% Use letters for the chapter numbers of the appendices.
+\appendix
+
+%\include{appendix-a/appendix-a}
+
+%% Turn off thumb indices for unnumbered chapters.
+\thumbfalse
+
+\chapter{Bibliography}
+% argument is your BibTeX string definitions and bibliography database(s)
+\bibliographystyle{abbrv}
+\bibliography{dissertation,./watchdog-tse/paper}
+
+\include{cv/cv}
+\include{publications/publications}
+
+\end{document}
+

@@ -1,0 +1,145 @@
+\documentclass{dissertation}
+
+%% Turn off page numbering for the propositions and make the margins on both
+%% sides equal and symmetrical.
+\geometry{twoside=false}
+\pagestyle{empty}
+
+\begin{document}
+
+%% Specify the title and author of the thesis. This information will be used on
+%% both the English and Dutch side and in the metadata of the final PDF.
+\title[Optional Subtitle]{Title}
+\author{Albert}{Einstein}
+
+\begin{center}
+
+{\Large\titlefont\bfseries Propositions}
+
+\bigskip
+
+accompanying the dissertation
+
+\bigskip
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\large\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \titlefont\titleshape\@subtitle
+\fi
+\makeatother}
+
+\bigskip
+
+by
+
+\bigskip
+
+%% Print the full name of the author.
+\makeatletter
+{\large\titlefont\bfseries\@firstname\ {\titleshape\@lastname}}
+\makeatother
+
+\end{center}
+
+\bigskip
+\bigskip
+
+\begin{enumerate}
+
+\item Proposition 1.
+\item Proposition 2.
+\item Proposition 3.
+\item Proposition 4.
+\item Proposition 5.
+\item Proposition 6.
+\item Proposition 7.
+\item Proposition 8.
+\item Proposition 9.
+\item Proposition 10.
+
+\end{enumerate}
+
+\bigskip
+\bigskip
+
+%% Apart from the name and title of the supervisor, the following text is
+%% dictated by the promotieregelement.
+\begin{center}
+These propositions are regarded as opposable and defendable, and have been approved as such by the promotor prof.\ dr.\ A.\ Kleiner.
+\end{center}
+
+\clearpage
+{\selectlanguage{dutch}
+
+\begin{center}
+
+{\Large\titlefont\bfseries Stellingen}
+
+\bigskip
+
+behorende bij het proefschrift
+
+\bigskip
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\large\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \titlefont\titleshape\@subtitle
+\fi
+\makeatother}
+
+\bigskip
+
+door
+
+\bigskip
+
+%% Print the full name of the author.
+\makeatletter
+{\large\titlefont\bfseries\@firstname\ {\titleshape\@lastname}}
+\makeatother
+
+\end{center}
+
+\bigskip
+\bigskip
+
+\begin{enumerate}
+
+\item Stelling 1.
+\item Stelling 2.
+\item Stelling 3.
+\item Stelling 4.
+\item Stelling 5.
+\item Stelling 6.
+\item Stelling 7.
+\item Stelling 8.
+\item Stelling 9.
+\item Stelling 10.
+
+\end{enumerate}
+
+\bigskip
+\bigskip
+
+%% Apart from the name and title of the supervisor, the following text is
+%% dictated by the promotieregelement.
+\begin{center}
+Deze stellingen worden opponeerbaar en verdedigbaar geacht en zijn als zodanig goedgekeurd door de promotor prof.\ dr.\ A.\ Kleiner.
+\end{center}
+
+}
+
+\end{document}
+
