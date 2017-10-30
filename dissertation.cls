@@ -317,8 +317,8 @@
 \pagestyle{mainmatter}
 
 %% Print the current chapter and section at the top of the page in cyan.
-\renewcommand*\chaptermark[1]{\markboth{\thechapter.\ \color{title}#1}{}}
-\renewcommand*\sectionmark[1]{\markright{\thesection.\ \color{title}#1}}
+\renewcommand*\chaptermark[1]{\markboth{\thechapter\ \color{title}#1}{}}
+\renewcommand*\sectionmark[1]{\markright{\thesection\ \color{title}#1}}
 
 %% The setheader command can be used to print the title of unnumbered chapters
 %% in the page header.
@@ -369,7 +369,7 @@
 %% in the title color.
 \titleformat{\section}
     {\Large\headerstyle}
-    {\bfseries\thesection.\ }
+    {\bfseries\thesection\ }
     {0pt}
     {\color{title}}
 %% Sections are preceded by an empty line.
@@ -382,7 +382,7 @@
 %% font.
 \titleformat{\subsection}
     {\large\headerstyle}
-    {\bfseries\thesubsection.\ }
+    {\bfseries\thesubsection\ }
     {0pt}
     {\color{title}}
 \titlespacing{\subsection}{0pt}{\baselineskip}{0pt}

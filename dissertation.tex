@@ -1,4 +1,4 @@
-\documentclass{dissertation}
+\documentclass[print]{dissertation}
 
 % *** CITATION PACKAGES ***
 %
@@ -9,6 +9,8 @@
 %
 \usepackage{graphicx}
 \usepackage{subfig}
+%% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
+\usepackage[section]{placeins}
 % declare the path(s) where your graphic files are
 \graphicspath{{watchdog-tse/figs/}}
 % and their extensions so you won't have to specify these with
