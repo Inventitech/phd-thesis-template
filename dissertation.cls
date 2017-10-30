@@ -45,11 +45,12 @@
 \RequirePackage{lettrine}
 \RequirePackage{metalogo}
 \RequirePackage[sectionbib,numbers,sort&compress]{natbib}
-\RequirePackage{tikz}
 \RequirePackage[noindentafter]{titlesec}
 \RequirePackage{titletoc}
 \RequirePackage[nottoc]{tocbibind}
-\RequirePackage{xcolor}
+\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
+%\RequirePackage[table]{xcolor}
+\RequirePackage{tikz}
 
 %% If the document is not compiled with XeLaTeX, we need to use the native
 %% fonts.

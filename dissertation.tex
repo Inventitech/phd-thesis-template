@@ -5,6 +5,93 @@
 %\usepackage{cite}
 
 
+\usepackage{paralist}
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage[hyphens]{url}
+%\usepackage[bookmarks=false,hidelinks]{hyperref}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+% clever citation references
+\usepackage[noabbrev]{cleveref}
+\Crefname{enumi}{Step}{Steps}
+\crefname{enumi}{step}{steps}
+
+
+\usepackage{pbox}
+
+\usepackage{tabularx}
+
+\usepackage{mdframed}
+\mdfsetup{skipbelow=3pt,skipabove=3pt,innerleftmargin=2.5pt,innerrightmargin=2.5pt,innertopmargin=2.5pt,innerbottommargin=2.5pt}
+\let\oldmdframed\mdframed
+\def\mdframed{\oldmdframed\noindent\ignorespaces}
+
+\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+
+%TODO (MMB) uncomment before camera-ready
+\clubpenalty=1000
+\widowpenalty=1000
+
+%\usepackage{flushend}
+%\AtEndDocument{\par\leavevmode}
+
+%\usepackage[section]{placeins}
+
+\usepackage{multirow}
+
+%\usepackage[table]{xcolor} % for colouring tables and cells
+
+\usepackage{marvosym} % for lightning symbol
+
+\definecolor{light-gray}{gray}{0.95}
+
+\usepackage{listings}
+\lstset{ %
+  backgroundcolor=\color{light-gray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+%  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+%  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  numberstyle=\tiny,
+   breaklines        = true,
+ breakatwhitespace = true,
+ breakindent       = 2ex,
+ escapechar        = *,
+  basicstyle=\scriptsize
+}
+
+\usepackage{txfonts}
+
+% Setup of cref/lstlisting
+\renewcommand{\lstlistingname}{Example}
+\crefname{lstlisting}{Example}{Examples}
+
+\usepackage{mathptmx}
+%\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+
+% number circles. They go well together with my favorite way of
+% labeling stuff in pictures.
+% Alternate circled command that I found on StackExchange but did not
+% find aesthatically pleasing, so I created my own
+%\newcommand*\circled[1]{\tikz[baseline={(char.base)}]{
+%\node[shape=circle,draw,inner sep=0.8pt] (char) {\tiny {#1}};}}
+
+
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \usepackage{graphicx}
@@ -12,7 +99,7 @@
 %% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
 \usepackage[section]{placeins}
 % declare the path(s) where your graphic files are
-\graphicspath{{watchdog-tse/figs/}}
+\graphicspath{{figs/},{travis-analysis/figs/},{watchdog-tse/figs/}}
 % and their extensions so you won't have to specify these with
 % every instance of \includegraphics
 % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
@@ -53,8 +140,6 @@
   nolistsep,leftmargin=1.65cm,rightmargin=0.9cm
 }
 
-\usepackage{tabularx}
-
 \usepackage{framed}
 \let\oldframed\framed
 \def\framed{\oldframed\noindent\ignorespaces}
@@ -90,7 +175,7 @@
 \newcommand{\ahref}[2]{\href{#1}{\nolinkurl{#2}}}
 \newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.35pt}\scriptsize{\raisebox{-.4pt}{#1}}}}}
 
-\hyphenation{TestRoots WatchDog proj-ect proj-ects Ec-lipse two-fold clie-nts Mo-cki-to}
+\hyphenation{TestRoots WatchDog proj-ect proj-ects Ec-lipse two-fold clie-nts Mo-cki-to wide-spread}
 
 \newcommand{\sparkline}[1]{$\vcenter{\hbox{\includegraphics[scale=0.04]{#1}}}$}
 
@@ -125,7 +210,9 @@
 \thumbtrue
 
 \include{chapter-1/chapter-1}
+\include{introduction/introduction}
 \include{watchdog-tse/paper}
+\include{travis-analysis/structure}
 \include{conclusion/conclusion}
 \include{acks/acks}
 
@@ -140,7 +227,7 @@
 \chapter{Bibliography}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{abbrv}
-\bibliography{dissertation,./watchdog-tse/paper}
+\bibliography{dissertation,./watchdog-tse/paper,./travis-analysis/structure}
 
 \include{cv/cv}
 \include{publications/publications}
