@@ -26,6 +26,7 @@
 \ifxetex
     \RequirePackage[xetex]{geometry}
     \RequirePackage[xetex]{graphicx}
+    %\usepackage[bookmarks=false,hidelinks]{hyperref}
     \RequirePackage[xetex,bookmarks=false,hidelinks]{hyperref}
     \RequirePackage{fontspec}
     \RequirePackage{xltxtra}
@@ -51,7 +52,7 @@
 \RequirePackage[noindentafter]{titlesec}
 \RequirePackage{titletoc}
 \RequirePackage[nottoc]{tocbibind}
-\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\RequirePackage[usenames,dvipsnames,svgnames,table,xcdraw]{xcolor}
 %\RequirePackage[table]{xcolor}
 \RequirePackage{tikz}
 

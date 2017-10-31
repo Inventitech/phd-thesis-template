@@ -27,10 +27,15 @@
 \Crefname{enumi}{Step}{Steps}
 \crefname{enumi}{step}{steps}
 
-
 \usepackage{pbox}
-
 \usepackage{tabularx}
+
+\usepackage{array}
+
+\usepackage{wrapfig}
+
+\usepackage{textcomp}
+\usepackage{slashbox}
 
 \usepackage{mdframed}
 \mdfsetup{skipbelow=3pt,skipabove=3pt,innerleftmargin=2.5pt,innerrightmargin=2.5pt,innertopmargin=2.5pt,innerbottommargin=2.5pt}
@@ -50,13 +55,23 @@
 
 \usepackage{multirow}
 
-%\usepackage[table]{xcolor} % for colouring tables and cells
-
-\usepackage{marvosym} % for lightning symbol
-
 \definecolor{light-gray}{gray}{0.95}
+\definecolor{mgreen}{HTML}{009901}
 
 \usepackage{listings}
+\lstset{ %
+  backgroundcolor=\color{light-gray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+%  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+%  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it 
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  numberstyle=\tiny,
+  basicstyle=\footnotesize
+}
+
 \lstset{ %
   backgroundcolor=\color{light-gray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
 %  keywordstyle=\color{blue},       % keyword style
@@ -74,12 +89,11 @@
   basicstyle=\scriptsize
 }
 
-\usepackage{txfonts}
-
 % Setup of cref/lstlisting
 \renewcommand{\lstlistingname}{Example}
 \crefname{lstlisting}{Example}{Examples}
 
+\usepackage{txfonts}
 \usepackage{mathptmx}
 %\usepackage[scaled=.90]{helvet}
 \usepackage{courier}
@@ -94,35 +108,15 @@
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
-\usepackage{graphicx}
 \usepackage{subfig}
 %% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
 \usepackage[section]{placeins}
 % declare the path(s) where your graphic files are
-\graphicspath{{figs/},{travis-analysis/figs/},{watchdog-tse/figs/}}
+\graphicspath{{figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/}}
 % and their extensions so you won't have to specify these with
 % every instance of \includegraphics
 % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 
-% *** PDF, URL AND HYPERLINK PACKAGES ***
-%
-%\usepackage[bookmarks=false,hidelinks]{hyperref}
-% url.sty was written by Donald Arseneau. It provides better support for
-% handling and breaking URLs. url.sty is already installed on most LaTeX
-% systems. The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
-% Read the url.sty source comments for usage information. Basically,
-% \url{my_url_here}.
-
-% *** Do not adjust lengths that control margins, column widths, etc. ***
-% *** Do not use packages that alter fonts (such as pslatex).         ***
-% There should be no need to do such things with IEEEtran.cls V1.6 and later.
-% (Unless specifically asked to do so by the journal or conference you plan
-% to submit to, of course. )
-% clever citation references
-\usepackage[noabbrev]{cleveref}
-\Crefname{enumi}{Step}{Steps}
-\crefname{enumi}{step}{steps}
 
 \usepackage{enumitem}
 %% \setlist{before=\setlength{\rightmargin}{0.17cm}}
@@ -211,6 +205,7 @@
 
 \include{chapter-1/chapter-1}
 \include{introduction/introduction}
+\include{last-line/main}
 \include{watchdog-tse/paper}
 \include{travis-analysis/structure}
 \include{conclusion/conclusion}
@@ -227,7 +222,7 @@
 \chapter{Bibliography}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{abbrv}
-\bibliography{dissertation,./watchdog-tse/paper,./travis-analysis/structure}
+\bibliography{dissertation,./last-line/bib,./watchdog-tse/paper,./travis-analysis/structure}
 
 \include{cv/cv}
 \include{publications/publications}
