@@ -10,6 +10,7 @@
 
 \LoadClass[10pt]{book}
 
+\RequirePackage{fontawesome}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 %% English is the default language, but Dutch is used for some sections.
@@ -42,6 +43,8 @@
     \RequirePackage[T1]{fontenc}
     \RequirePackage[utf8]{inputenc}
 \fi
+\RequirePackage{rotating}
+\RequirePackage{longtable}
 \RequirePackage{lettrine}
 \RequirePackage{metalogo}
 \RequirePackage[sectionbib,numbers,sort&compress]{natbib}
