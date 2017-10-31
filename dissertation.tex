@@ -112,7 +112,7 @@
 %% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
 \usepackage[section]{placeins}
 % declare the path(s) where your graphic files are
-\graphicspath{{figs/},{asats/figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/}}
+\graphicspath{{figs/},{asats/figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/},{debugging/figs/},{debugging/img/}}
 % and their extensions so you won't have to specify these with
 % every instance of \includegraphics
 % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
@@ -173,6 +173,14 @@
 
 \newcommand{\sparkline}[1]{$\vcenter{\hbox{\includegraphics[scale=0.04]{#1}}}$}
 
+
+\usepackage[outdir=./img/]{epstopdf}
+\usepackage[export]{adjustbox}
+
+\newcommand*{\origrightarrow}{}
+\let\oldarrow\textrightarrow
+\renewcommand*{\textrightarrow}{\fontfamily{cmr}\selectfont\origrightarrow}
+
 \input{abbreviations}
 
 \begin{document}
@@ -212,6 +220,7 @@
 \include{last-line/main}
 \include{watchdog-tse/paper}
 \include{travis-analysis/structure}
+\include{debugging/paper}
 \include{conclusion/conclusion}
 \include{acks/acks}
 
@@ -226,7 +235,7 @@
 \chapter{Bibliography}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{abbrv}
-\bibliography{dissertation,./asats/paper,./last-line/bib,./watchdog-tse/paper,./travis-analysis/structure}
+\bibliography{dissertation,./asats/paper,./last-line/bib,./watchdog-tse/paper,./travis-analysis/structure,./debugging/paper}
 
 \include{cv/cv}
 \include{publications/publications}
