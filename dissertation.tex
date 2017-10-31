@@ -112,7 +112,7 @@
 %% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
 \usepackage[section]{placeins}
 % declare the path(s) where your graphic files are
-\graphicspath{{figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/}}
+\graphicspath{{figs/},{asats/figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/}}
 % and their extensions so you won't have to specify these with
 % every instance of \includegraphics
 % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
@@ -208,6 +208,7 @@
 
 \include{chapter-1/chapter-1}
 \include{introduction/introduction}
+\include{asats/paper}
 \include{last-line/main}
 \include{watchdog-tse/paper}
 \include{travis-analysis/structure}
@@ -225,7 +226,7 @@
 \chapter{Bibliography}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{abbrv}
-\bibliography{dissertation,./last-line/bib,./watchdog-tse/paper,./travis-analysis/structure}
+\bibliography{dissertation,./asats/paper,./last-line/bib,./watchdog-tse/paper,./travis-analysis/structure}
 
 \include{cv/cv}
 \include{publications/publications}

@@ -45,7 +45,7 @@
     \RequirePackage[utf8]{inputenc}
 \fi
 \RequirePackage{rotating}
-\RequirePackage{longtable}
+\RequirePackage{tablefootnote}
 \RequirePackage{lettrine}
 \RequirePackage{metalogo}
 \RequirePackage[sectionbib,numbers,sort&compress]{natbib}
