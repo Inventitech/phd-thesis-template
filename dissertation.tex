@@ -225,14 +225,17 @@
 \include{acks/acks}
 
 %% Use letters for the chapter numbers of the appendices.
-\appendix
+%\appendix
 
 %\include{appendix-a/appendix-a}
 
 %% Turn off thumb indices for unnumbered chapters.
 \thumbfalse
 
-\chapter{Bibliography}
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+\setheader{Bibliography}
+
 URLs in this thesis have been archived on Archive.org. Their link target in digital editions refers
 to this timestamped version.
 

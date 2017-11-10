@@ -51,7 +51,7 @@
 \RequirePackage[sectionbib,numbers,sort&compress]{natbib}
 \RequirePackage[noindentafter]{titlesec}
 \RequirePackage{titletoc}
-\RequirePackage[nottoc]{tocbibind}
+%\RequirePackage[nottoc]{tocbibind}
 \RequirePackage[usenames,dvipsnames,svgnames,table,xcdraw]{xcolor}
 %\RequirePackage[table]{xcolor}
 \RequirePackage{tikz}
