@@ -21,10 +21,10 @@ ggplot.small.defaults <-
 
 gh_history_prs <- read_csv("~/projects/phd-thesis/dissertation-tudelft-latex/introduction/results-20171204-171053.csv")
 gh_history_prs$aggregated_date <- as.Date(paste0(gh_history_prs$pr_yr, '-', gh_history_prs$pr_mt, '-1'))
-gh_history_prs <- gh_history_prs[gh_history_prs$action %in% c("opened","closed"),]
-#gh_history_prs <- gh_history_prs[gh_history_prs$aggregated_date < as.Date("2014-03-01"),]
+gh_history_prs <- gh_history_prs[gh_history_prs$action %in% c("opened","merged"),]
+gh_history_prs <- gh_history_prs[gh_history_prs$aggregated_date < as.Date("2014-02-01"),]
 
-ggplot(gh_history_prs, aes(aggregated_date, freq, shape=action, group=action, colour=action)) + geom_point() + geom_line() + geom_smooth(se = FALSE) +
+ggplot(gh_history_prs, aes(aggregated_date, freq, shape=action, group=action, colour=action)) + geom_point(size=2.5) + geom_line() + geom_smooth(se = FALSE) +
   scale_y_continuous(labels = scales::comma) +
   ggplot.small.defaults +
   ylab("#Events") + xlab("") + labs(shape='Pullrequest Events',colour='Pullrequest Events') + theme(legend.position = "bottom")
