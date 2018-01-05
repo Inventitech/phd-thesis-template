@@ -7,6 +7,7 @@ force-build:
 
 dissertation.pdf: force-build
 	pdflatex dissertation
+	makeglossaries dissertation
 	bibtex dissertation
 	pdflatex dissertation
 	pdflatex dissertation

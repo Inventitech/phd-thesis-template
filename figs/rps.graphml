@@ -39,10 +39,12 @@ Development<y:LabelModel>
           <y:Geometry height="113.0" width="113.0" x="173.5" y="273.5"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" modelName="custom" textColor="#000000" visible="true" width="105.6015625" x="3.69921875" y="26.5625">ASAT use,
-local and remote
-testing, 
-debugging<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="87.8125" modelName="custom" textColor="#000000" visible="true" width="76.03515625" x="18.482421875" y="12.59375">Quality 
+Assurance 
+Methods
+in OSS and 
+Commercial
+Software<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -125,7 +127,7 @@ Studies<y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="36.0" width="36.0" x="173.5" y="350.5"/>
+          <y:Geometry height="36.0" width="36.0" x="156.5" y="342.5"/>
           <y:Fill color="#FFFFFFE6" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#0000FF" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="16.0" y="40.0">

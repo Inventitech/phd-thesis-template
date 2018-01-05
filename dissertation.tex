@@ -174,13 +174,16 @@
 
 \newcommand{\sparkline}[1]{$\vcenter{\hbox{\includegraphics[scale=0.04]{#1}}}$}
 
-
 \usepackage[outdir=./img/]{epstopdf}
 \usepackage[export]{adjustbox}
+
+\usepackage[nomain,acronym,nonumberlist,style=list]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\makeglossaries
 
 \newcommand*{\origrightarrow}{}
 \let\oldarrow\textrightarrow
 \renewcommand*{\textrightarrow}{\fontfamily{cmr}\selectfont\origrightarrow}
+\loadglsentries[main]{glossary}
 
 \input{abbreviations}
 
@@ -242,6 +245,13 @@ to this timestamped version.
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{unsrt}
 \bibliography{dissertation,./asats/paper,./last-line/bib,./watchdog-tse/paper,./travis-analysis/structure,./debugging/paper}
+
+%% \chapter*{Glossary}
+
+\glsaddall
+\printglossary[type=\acronymtype,title={Glossary}]
+\addcontentsline{toc}{chapter}{Glossary}
+\setheader{Glossary}
 
 \include{cv/cv}
 \include{publications/publications}
