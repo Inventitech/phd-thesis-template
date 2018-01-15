@@ -5,7 +5,13 @@ all: dissertation.pdf
 
 force-build:
 
-dissertation.pdf: force-build
+
+figs: figs/development_model_without_papers.pdf
+
+figs/development_model_without_papers.pdf:
+	rsvg-convert -f pdf -o  figs/development_model_without_papers.pdf figs/development_model_without_papers.svg
+
+dissertation.pdf: figs force-build
 	pdflatex dissertation
 	makeglossaries dissertation
 	bibtex dissertation
