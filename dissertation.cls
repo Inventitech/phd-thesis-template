@@ -13,6 +13,9 @@
 \RequirePackage{fontawesome}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+\RequirePackage{txfonts}
+\RequirePackage{mathptmx}
+
 %% English is the default language, but Dutch is used for some sections.
 \RequirePackage[dutch,english]{babel}
 \RequirePackage{calc}
@@ -40,8 +43,7 @@
         \RequirePackage[dvips]{geometry}
         \RequirePackage[dvips]{graphicx}
         \RequirePackage[hypertex,bookmarks=false,hidelinks]{hyperref}
-    \fi
-    \RequirePackage[T1]{fontenc}
+        \fi
     \RequirePackage[utf8]{inputenc}
 \fi
 \RequirePackage{rotating}
@@ -64,10 +66,14 @@
 
 \if@nativefonts
     %% The native font is Utopia Regular with Fourier math. We use Latin Modern
-    %% as a fallback, since Utopia lacks support for sans-serif and monospace.
+%% as a fallback, since Utopia lacks support for sans-serif and monospace.
+
+ \RequirePackage{libertine}
+    \RequirePackage{libertinust1math}
     \RequirePackage[T1]{fontenc}
+
     \RequirePackage[utf8]{inputenc}
-    \RequirePackage{lmodern}
+    
     %% \RequirePackage{fourier}
     %% The style for titles is small caps.
     \def\titlefont{\rmfamily}
@@ -77,40 +83,47 @@
         \def\headerstyle{\titlefont\titleshape\bfseries}
     \else
         \def\headerstyle{\titlefont\titleshape}
-    \fi
+        \fi
 \else
     %% The TU Delft house style fonts are Bookman Old Style (serif) for titles
     %% and Tahoma (sans-serif) for text. Apart from these, we use Courier New
     %% for monospace and Cambria for math.
-    \RequirePackage{unicode-math}
-    \setmainfont[
-        Path = fonts/,
-        Extension = .ttf,
-        BoldFont = *-Bold,
-        ItalicFont = *-Italic,
-        BoldItalicFont = *-BoldItalic
-    ]{BookmanOldStyle}
-    \setsansfont[
-        Path = fonts/,
-        Extension = .ttf,
-        BoldFont = *-Bold,
-        ItalicFont = *,
-        ItalicFeatures = FakeSlant,
-        BoldItalicFont = *-Bold,
-        BoldItalicFeatures = FakeSlant
-    ]{Tahoma}
-    \setmonofont[
-        Path = fonts/,
-        Extension = .ttf,
-        UprightFont = *MT,
-        BoldFont = *-BoldMT,
-        ItalicFont = *-ItalicMT,
-        BoldItalicFont = *-BoldItalicMT
-    ]{CourierNewPS}
-    \setmathfont[
-        Path = fonts/,
-        Extension = .ttf
-    ]{CambriaMath}
+\RequirePackage{unicode-math}
+
+%\setmainfont{Linux Libertine O} % Note the O
+%\setmathfont{Libertinus Math}
+
+\setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
+\setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
+\setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
+    %% \setmainfont[
+    %%     Path = fonts/,
+    %%     Extension = .ttf,
+    %%     BoldFont = *-Bold,
+    %%     ItalicFont = *-Italic,
+    %%     BoldItalicFont = *-BoldItalic
+    %% ]{BookmanOldStyle}
+    %% \setsansfont[
+    %%     Path = fonts/,
+    %%     Extension = .ttf,
+    %%     BoldFont = Tahoma-Bold
+    %%     ItalicFont = *,
+    %%     ItalicFeatures = FakeSlant,
+    %%     BoldItalicFont = *-Bold
+    %%     BoldItalicFeatures = FakeSlant
+    %% ]{Tahoma}
+    %% \setmonofont[
+    %%     Path = fonts/,
+    %%     Extension = .ttf,
+    %%     UprightFont = *MT,
+    %%     BoldFont = *-BoldMT,
+    %%     ItalicFont = *-ItalicMT,
+    %%     BoldItalicFont = *-BoldItalicMT
+    %% ]{CourierNewPS}
+    %% \setmathfont[
+    %%     Path = fonts/,
+    %%     Extension = .ttf
+    %% ]{CambriaMath}
     %% The default style for text is Tahoma (sans-serif).
     \renewcommand*\familydefault{\sfdefault}
     %% The default style for titles is Bookman Old Style (serif).
