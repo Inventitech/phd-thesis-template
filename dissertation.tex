@@ -59,44 +59,27 @@
 \definecolor{mgreen}{HTML}{009901}
 
 \usepackage{listings}
-\lstset{ %
-  backgroundcolor=\color{light-gray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-%  keywordstyle=\color{blue},       % keyword style
-  language=C,                 % the language of the code
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=5pt,                   % how far the line-numbers are from the code
-%  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it 
-  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
-  numberstyle=\tiny,
-  basicstyle=\footnotesize
-}
 
 \lstset{ %
   backgroundcolor=\color{light-gray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-%  keywordstyle=\color{blue},       % keyword style
+  %  keywordstyle=\color{blue},       % keyword style
   language=C,                 % the language of the code
   numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
   numbersep=5pt,                   % how far the line-numbers are from the code
-%  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  %  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
   showspaces=false,                % show spaces everywhere adding particular underscores; it
   stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
   numberstyle=\tiny,
-   breaklines        = true,
- breakatwhitespace = true,
- breakindent       = 2ex,
- escapechar        = *,
-  basicstyle=\scriptsize
+  breaklines        = true,
+  breakatwhitespace = true,
+  breakindent       = 2ex,
+  escapechar        = *,
+  basicstyle=\scriptsize\ttfamily
 }
 
 % Setup of cref/lstlisting
 \renewcommand{\lstlistingname}{Example}
 \crefname{lstlisting}{Example}{Examples}
-
-\usepackage{txfonts}
-\usepackage{mathptmx}
-%\usepackage[scaled=.90]{helvet}
-\usepackage{courier}
 
 % number circles. They go well together with my favorite way of
 % labeling stuff in pictures.
@@ -238,7 +221,7 @@
 \setheader{Bibliography}
 
 URLs in this thesis have been archived on Archive.org. Their link target in digital editions refers
-to this timestamped version.
+to this timestamped version. \textbf{bold}
 
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{unsrt}

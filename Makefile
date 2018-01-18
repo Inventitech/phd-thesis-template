@@ -15,15 +15,15 @@ figs/development_model_only_papers.pdf:
 	rsvg-convert -f pdf -o  figs/development_model_only_papers.pdf figs/development_model_only_papers.svg
 
 dissertation.pdf: figs force-build
-	pdflatex dissertation
+	xelatex dissertation
 	makeglossaries dissertation
 	bibtex dissertation
-	pdflatex dissertation
-	pdflatex dissertation
+	xelatex dissertation
+	xelatex dissertation
 
 propositions.pdf: force-build
-	pdflatex propositions
-	pdflatex propositions
+	xelatex propositions
+	xelatex propositions
 
 clean:
 	rubber --clean dissertation.tex
