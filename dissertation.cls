@@ -89,12 +89,12 @@
     %% for monospace and Cambria for math.
     \RequirePackage{unicode-math}
 
-   \setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
-   \setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
-   \setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
-   \setmonofont[Scale=MatchLowercase]{inconsolata}
+    \setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
+    \setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
+    \setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
+    \setmonofont[Scale=MatchLowercase]{inconsolata}
     %% The default style for text is Tahoma (sans-serif).
-    \renewcommand*\familydefault{\sfdefault}
+    %\renewcommand*\familydefault{\sfdefault}
     %% The default style for titles is Bookman Old Style (serif).
     \def\titlefont{\rmfamily}
     \def\titleshape{}
@@ -355,7 +355,7 @@
 %% Section titles start with the number in bold, followed by the name printed
 %% in the title color.
 \titleformat{\section}
-    {\Large\headerstyle}
+    {\Large\bfseries\headerstyle}
     {\thesection\ }
     {0pt}
     {\color{black}}
@@ -368,7 +368,7 @@
 %% Subsection titles have the same layout as section titles, except in a smaller
 %% font.
 \titleformat{\subsection}
-    {\large\headerstyle}
+    {\large\bfseries\headerstyle}
     {\thesubsection\ }
     {0pt}
     {\color{black}}
@@ -378,7 +378,7 @@
 %% Subsubsections have the same font and color as sections and subsections, but
 %% are not preceded by a number.
 \titleformat{\subsubsection}
-    {\headerstyle}
+    {\bfseries\headerstyle}
     {}
     {0pt}
     {\color{black}}
