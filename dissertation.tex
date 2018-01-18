@@ -43,8 +43,6 @@
 \let\oldmdframed\mdframed
 \def\mdframed{\oldmdframed\noindent\ignorespaces}
 
-\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
-
 % Advanced Hyphenation
 \clubpenalty=1000
 \widowpenalty=1000
@@ -126,7 +124,7 @@
 \usepackage{booktabs}
 
 \usepackage{relsize}
-\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+\renewcommand*{\UrlFont}{\ttfamily\relax}
 
 \clubpenalty=1000
 \widowpenalty=1000
@@ -152,7 +150,7 @@
 \newcommand{\var}[1]{{\ttfamily#1}}% variable
 
 \newcommand{\ahref}[2]{\href{#1}{\nolinkurl{#2}}}
-\newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.35pt}\scriptsize{\raisebox{-.4pt}{#1}}}}}
+\newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.33pt}\scriptsize{\raisebox{-.1pt}{#1}}}}}
 
 \hyphenation{TestRoots WatchDog proj-ect proj-ects Ec-lipse two-fold clie-nts Mo-cki-to wide-spread}
 
@@ -223,7 +221,7 @@
 \setheader{Bibliography}
 
 URLs in this thesis have been archived on Archive.org. Their link target in digital editions refers
-to this timestamped version. \textbf{bold}
+to this timestamped version.
 
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliographystyle{unsrt}

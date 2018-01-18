@@ -92,36 +92,7 @@
    \setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
    \setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
    \setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
-   %\setmonofont[Path = fonts/libertinus/,Scale=MatchLowercase]{libertinusmono-regular.otf}
    \setmonofont[Scale=MatchLowercase]{inconsolata}
-    %% \setmainfont[
-    %%     Path = fonts/,
-    %%     Extension = .ttf,
-    %%     BoldFont = *-Bold,
-    %%     ItalicFont = *-Italic,
-    %%     BoldItalicFont = *-BoldItalic
-    %% ]{BookmanOldStyle}
-    %% \setsansfont[
-    %%     Path = fonts/,
-    %%     Extension = .ttf,
-    %%     BoldFont = Tahoma-Bold
-    %%     ItalicFont = *,
-    %%     ItalicFeatures = FakeSlant,
-    %%     BoldItalicFont = *-Bold
-    %%     BoldItalicFeatures = FakeSlant
-    %% ]{Tahoma}
-    %% \setmonofont[
-    %%     Path = fonts/,
-    %%     Extension = .ttf,
-    %%     UprightFont = *MT,
-    %%     BoldFont = *-BoldMT,
-    %%     ItalicFont = *-ItalicMT,
-    %%     BoldItalicFont = *-BoldItalicMT
-    %% ]{CourierNewPS}
-    %% \setmathfont[
-    %%     Path = fonts/,
-    %%     Extension = .ttf
-    %% ]{CambriaMath}
     %% The default style for text is Tahoma (sans-serif).
     \renewcommand*\familydefault{\sfdefault}
     %% The default style for titles is Bookman Old Style (serif).
@@ -321,24 +292,24 @@
 \fancypagestyle{mainmatter}{%
     \fancyhf{}
     %% Page numbers on the top left and top right.
-    \fancyhead[LE]{\cropmarks\lthumb\titlefont\thepage}
-    \fancyhead[RO]{\cropmarks\rthumb\titlefont\thepage}
+    \fancyhead[LE]{\cropmarks\lthumb\titlefont\color{thumb}\thepage}
+    \fancyhead[RO]{\cropmarks\rthumb\titlefont\color{thumb}\thepage}
     %% Chapter name on the left (even) page.
-    \fancyhead[RE]{\titlefont\titleshape\nouppercase{\leftmark}}
+    \fancyhead[RE]{\titlefont\titleshape\color{thumb}\nouppercase{\leftmark}}
     %% Section name on the right (odd) page.
-    \fancyhead[LO]{\titlefont\titleshape\nouppercase{\rightmark}}
+    \fancyhead[LO]{\titlefont\titleshape\color{thumb}\nouppercase{\rightmark}}
 }
 
 %% The mainmatter style is default for normal pages.
 \pagestyle{mainmatter}
 
 %% Print the current chapter and section at the top of the page in cyan.
-\renewcommand*\chaptermark[1]{\markboth{\thechapter\ \color{title}#1}{}}
-\renewcommand*\sectionmark[1]{\markright{\thesection\ \color{title}#1}}
+\renewcommand*\chaptermark[1]{\markboth{\color{thumb}\thechapter\ #1}{}}
+\renewcommand*\sectionmark[1]{\markright{\color{thumb}\thesection\ #1}}
 
 %% The setheader command can be used to print the title of unnumbered chapters
 %% in the page header.
-\newcommand*\setheader[1]{\markboth{\color{title}#1}{\color{title}#1}}
+\newcommand*\setheader[1]{\markboth{\color{thumb}#1}{\color{thumb}#1}}
 
 %% Change the headrule command (from fancyhdr.sty) to draw the line below the
 %% header in the title color.
@@ -346,14 +317,14 @@
     \if@fancyplain%
         \let\headrulewidth\plainheadrulewidth%
     \fi%
-    {\color{title}\hrule\@height\headrulewidth\@width\headwidth}%
+    {\color{thumb}\hrule\@height\headrulewidth\@width\headwidth}%
     \vskip-\headrulewidth%
 }
 
 %% Draw the line above a footnote in the title color as well.
 \renewcommand*\footnoterule{%
     \vspace*{-3pt}%
-    {\color{title}\hrule width 0.5\textwidth height 0.4pt}%
+    {\color{thumb}\hrule width 0.5\textwidth height 0.4pt}%
     \vspace*{2.6pt}%
 }
 
@@ -385,9 +356,9 @@
 %% in the title color.
 \titleformat{\section}
     {\Large\headerstyle}
-    {\bfseries\thesection\ }
+    {\thesection\ }
     {0pt}
-    {\color{title}}
+    {\color{black}}
 %% Sections are preceded by an empty line.
 \titlespacing{\section}{0pt}{\baselineskip}{0pt}
 %% In the table of contents, section names are followed by a line of dots 8pt
@@ -398,9 +369,9 @@
 %% font.
 \titleformat{\subsection}
     {\large\headerstyle}
-    {\bfseries\thesubsection\ }
+    {\thesubsection\ }
     {0pt}
-    {\color{title}}
+    {\color{black}}
 \titlespacing{\subsection}{0pt}{\baselineskip}{0pt}
 \dottedcontents{subsection}[7em]{\titlefont}{3.2em}{8pt}
 
@@ -410,17 +381,17 @@
     {\headerstyle}
     {}
     {0pt}
-    {\color{title}}
+    {\color{black}}
 %% Subsubsections are preceded by an empty line and do not appear in the table
 %% of contents.
 \titlespacing{\subsubsection}{0pt}{\bigskipamount}{0pt}
 
 %% Color the bullets of the itemize environment and make the symbol of the third
 %% level a diamond instead of an asterisk.
-\renewcommand*\labelitemi{\color{title}\textbullet}
-\renewcommand*\labelitemii{\color{title}--}
-\renewcommand*\labelitemiii{\color{title}$\diamond$}
-\renewcommand*\labelitemiv{\color{title}\textperiodcentered}
+\renewcommand*\labelitemi{\color{black}\textbullet}
+\renewcommand*\labelitemii{\color{black}--}
+\renewcommand*\labelitemiii{\color{black}$\diamond$}
+\renewcommand*\labelitemiv{\color{black}\textperiodcentered}
 
 %% The dedication is vertically centered on a separate page and flushed to the
 %% right.
@@ -472,11 +443,11 @@
 %% beginning of a section.
 \renewcommand*\LettrineTextFont{\titleshape}
 \newcommand*\dropcap[2]{
-    \lettrine[lines=2,findent=0.2em,nindent=0pt]{\color{title} #1}{#2}%
+    \lettrine[lines=2,findent=0.2em,nindent=0pt]{\color{black} #1}{#2}%
 }
 
 %% Create an unnumbered reference section.
-\addto\captionsenglish{\renewcommand*\bibname{\color{title}References}}
+\addto\captionsenglish{\renewcommand*\bibname{\color{black}References}}
 \newcommand*\references[1]{%
     \bibliographystyle{dissertation}%
     \bibliography{#1}%
