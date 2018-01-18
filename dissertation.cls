@@ -71,7 +71,6 @@
  \RequirePackage{libertine}
     \RequirePackage{libertinust1math}
     \RequirePackage[T1]{fontenc}
-
     \RequirePackage[utf8]{inputenc}
     
     %% \RequirePackage{fourier}
@@ -88,14 +87,13 @@
     %% The TU Delft house style fonts are Bookman Old Style (serif) for titles
     %% and Tahoma (sans-serif) for text. Apart from these, we use Courier New
     %% for monospace and Cambria for math.
-\RequirePackage{unicode-math}
+    \RequirePackage{unicode-math}
 
-%\setmainfont{Linux Libertine O} % Note the O
-%\setmathfont{Libertinus Math}
-
-\setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
-\setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
-\setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
+   \setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
+   \setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
+   \setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
+   %\setmonofont[Path = fonts/libertinus/,Scale=MatchLowercase]{libertinusmono-regular.otf}
+   \setmonofont[Scale=MatchLowercase]{inconsolata}
     %% \setmainfont[
     %%     Path = fonts/,
     %%     Extension = .ttf,
