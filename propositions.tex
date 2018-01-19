@@ -5,6 +5,15 @@
 \geometry{twoside=false}
 \pagestyle{empty}
 
+\RequirePackage{unicode-math}
+
+\setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
+\setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
+\setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
+\setmonofont[Scale=MatchLowercase]{inconsolata}
+%% The default style for text is Tahoma (sans-serif).
+%\renewcommand*\familydefault{\sfdefault}
+    
 \begin{document}
 
 %% Specify the title and author of the thesis. This information will be used on
@@ -51,35 +60,26 @@ by
 \bigskip
 
 \begin{enumerate}
-\item Researchers should study testing practices in a language whose ecosystem is testing-focused
-  (such as Ruby) rather than Java, which seems to be the current default. [This thesis]
-\item There is a dichotomy among OSS projects: Few projects are swarmed by contributions and do not
-  know how to manage them anymore, whereas most barely get any, or if they do, they are not
-  integrated because the project is already dormant. Paradoxically, both kinds of projects would
-  benefit from automating their feedback loops. [This thesis]
-\item Once we have uncovered or researched a new phenomenon empirically, we can never research it
-  again from the same standpoint because we have interfered with it. [This thesis]
-\item Most papers contain at least one statistical result that is wrong. [This thesis]
-\item Most published empirical research only captures a static snapshot of current software
-  development practices and is thus at best only of contemporary value.
-\item The fundamental problem of Empirical Software Engineering, in contrast to most other science
-  fields, is its inherent lack of generality in the outcome measures that would best describe
-  different projects.
-\item Reviewers who write comments on the lines of ``this finding is not interesting or
+\item Research on testing should happen in a language with state-of-the-art testing practices, such
+  as Ruby, rather than Java. [This thesis]
+\item Once we have uncovered a new phenomenon empirically, we can never research it again from the
+  same standpoint because we have interfered with it, see for example the Last Line Effect. [This
+    thesis]
+\item To make case studies in Software Engineering relevant beyond their publishing date, we need
+  continuously self-updating papers.
+\item The fundamental problem of Software Engineering, in contrast to most other science
+  fields, is its inherent lack of generality in the goals different projects have.
+\item Reviewers who write comments à la ``this finding is not interesting or
   surprising'' should read crime novels instead of scientific papers.
 \item Most citations are superficial and do not embed or work with the cited paper.
-  \newpage
-\item[9a.] Reviewers are more likely to reveal their identity to authors in the case of a positive
-  assessment, creating a dependency of gratitude on the authors. Because the Software Engineering
-  research community is so interwoven, severe conflicts of interest arise from this behavior,
-  intended or not.
-\item[9b.] Everybody in academia has their fundamentally own agenda in joint work. In most roles,
-  this means doing as little work as possible, while participating in as many projects as possible,
-  is beneficial. Hence, most of the time, no real team work can exist in academia.
-\item[9c.] With teaching, researching, and attracting funding, professors at universities have too
-  many roles to fulfill them satisfactorily. Thus, by definition, professors can not do a good job.
-\item[10.] The productivity of PhD students is directly correlated with how nice their supervisors
-  are.
+\item Reviewers are more likely to reveal their identity to authors in the case of a positive
+  review, creating a dependency of gratitude on the authors. This gives rise to all sorts of
+  conflicts.
+\item The current academic model does not incentivize collaboration, as everyone is working toward
+  their own goal.
+\item The productivity of PhD students is directly correlated with how sincerely friendly their
+  supervisors are.
+\item Most papers contain at least one statistical result that is wrong. [This thesis]
 \end{enumerate}
 
 \bigskip
@@ -89,7 +89,7 @@ by
 %% dictated by the promotieregelement.
 \begin{center}
 These propositions are regarded as opposable and defendable, and have been approved as such by the
-promotors prof.\ dr.\ A.\ van Deursen, dr.\ A.\ Zaidman, and dr.\ G.\ Gousios.
+promotors Prof.\ Dr.\ A.\ van Deursen, Dr.\ A.\ Zaidman, and Dr.\ G.\ Gousios.
 \end{center}
 
 %% \clearpage
