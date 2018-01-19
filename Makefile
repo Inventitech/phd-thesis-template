@@ -1,7 +1,7 @@
 
 .PHONY: force-build
 
-all: dissertation.pdf
+all: dissertation.pdf propositions.pdf
 
 force-build:
 
