@@ -19,7 +19,7 @@ dissertation.pdf: figs force-build
 	latexmk -xelatex dissertation
 
 propositions.pdf: force-build
-	latexmk -xelatex dissertation
+	latexmk -xelatex propositions
 
 clean:
 	rubber --clean dissertation.tex
