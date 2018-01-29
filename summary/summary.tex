@@ -9,27 +9,28 @@ tight integration of CI services like \travis, software development practices ha
 changed.  Despite a highly alternated software engineering landscape, however, we still lack a
 suitable holistic description of contemporary software development practices. Existing descriptions
 like the V-model are either too coarse-grained to describe an individual contributor's workflow, or
-only regard a sub-part of the development process like Test-Driven Development (TDD). In addition,
+only regard a sub-part of the development process, like Test-Driven Development (TDD). In addition,
 most existing models are \emph{pre-} rather than \emph{de-}scriptive.
 
-By contrast, in our thesis, we perform a series of empirical studies to describe the individual
-constituents of Feedback-Driven Development (FDD): we study the prevalence and evolution of
-Automatic Static Analysis Tools (ASATs), we explain the ``Last Line Effect,'' a phenomenon at the
-boundary between ASATs and code review, we observe local testing patterns in the IDE, compare them
-to remote testing on the CI server, and, finally, should these quality assurance techniques have
-failed, we examine how developers debug faults. We then compile this empirical evidence into an
-initial theory of how modern software development works.
+By contrast, in this thesis, we perform a series of empirical studies to characterize the
+individual constituents of Feedback-Driven Development (FDD): we study the prevalence and evolution
+of Automatic Static Analysis Tools (ASATs), we explain the ``Last Line Effect,'' a phenomenon at
+the boundary between ASATs and code review, we observe local testing patterns in the Integrated
+Development Environment (IDE) of developers, compare them to remote testing on the CI server, and,
+finally, should these quality assurance techniques have failed, we examine how developers debug
+faults. We then compile this empirical evidence into an initial theory of how today's software
+developers works.
 
 Our results show that developers employ the different techniques in FDD to best achieve their
 current task in the most efficient way, often knowingly taking shortcuts to \emph{get the job
   done}. While this is efficient in the short term, it also bears risks, namely that prevention and
 introspection activities fall short: developers might not configure or combine ASATs to their full
-benefit, they might have wrong perceptions about the amount of time spent on quality-control, that
-quality-related activities like testing become an after-thought, and learning about debugging
+benefit, they might have wrong perceptions about the amount of time spent on quality-control,
+quality-related activities like testing could become an after-thought, and learning about debugging
 techniques falls short. A relatively rigid, tool-enforced FDD process could help developers in not
-committing some of these fallacies. Our thesis culminates in the finding that feedback loops are
+committing some of these mistakes. Our thesis culminates in the finding that feedback loops are
 the characterizing criterion of contemporary software development. Our model is flexible enough to
-accommodate a broad bandwidth of modern workflows, despite large variances in how projects use and
+accommodate a broad band of modern workflows, despite large variances in how projects use and
 configure parts of FDD.
 
 \chapter*{Samenvatting}
@@ -38,7 +39,37 @@ configure parts of FDD.
 
 {\selectlanguage{dutch}
 
-Samenvatting in het Nederlands\ldots
+Software ontwikkelaars van vandaag hunkeren naar feedback over hun werk, zij het van hun peers qua
+code review, static analysis tools zoals hun compiler, of de lokale of remote executie van hun
+tests in de Continuous Integration (CI) omgeving. Door sociaal coding sites zoals \github en een
+strakke integratie van CI services zoals \travis zijn software ontwikkeling praktijken vandaag
+enorm verandert. Ondanks deze grote veranderingen hebben nog steeds geen passende holistische
+beschrijving van tijdgenoot software ontwikkelings- praktijken. Bestaande beschrijvingen zoals de
+v-model zijn te grof om een individueel workflow te beschrijven of gaan alleen over een onderdeel
+van de ontwikkeling process, zoals Test-Driven Development (TDD). Daarnaast zijn de bestaande
+modellen meer \emph{pre-} als \emph{de}-scriptief.
 
-}
+Daarentegen doen we een series van empirische studies in deze thesis om de individuele
+bestanddelen van Feedback-Driven Development te karakteriseren: we onderzoeken de verbreidheid en
+evolutie van Automatic Static Analysis Tools (ASATs), we leggen de ``Last Line Effect'' uit, een
+fenomeen aan de grens tussen ASATs en code review, we volgen lokale test monsteren in de Integrated
+Development Environment (IDE) van ontwikkelaars, vergelijken hun met remote testen op de CI server,
+en, uiteindelijk, als deze kwaliteitsverzekeringsmethoden mislukt zijn, onderzoeken we hoe
+ontwikkelaars foutjes debuggen. Vervolgens compileren we deze empirische evidentie in een initiale
+theorie over hoe de software ontwikkelaars van vandaag werken.
+
+Onze resultaten tonen dat programmeurs de verschillende technieken in FDD gebruiken om hun actueel
+opdracht op de meest effici{\"e}nte manier uit te voeren, waartoe ze vaak bewust de weg afkorten
+\emph{to get the job done.} Terwijl dit effici{\"e}nt is op korte termijn, draagt het ook risico's,
+vooral dat preventie en introspectie activiteiten te kort kunnen komen: programmeurs configureren
+hun ASATs wellicht niet voor hun maximaal voordeel, ze hebben misschien een verkeerde perceptie van
+de tijd die ze op kwaliteitskontrolle gebruiken, kwaliteits-verwante activiteiten zoals testen
+worden misschien een afterthought, een leren over debugging technieken komt te kort. Een best wel
+starre, door een tool doorgezet FDD proces kan ontwikkelaars dus helpen deze foutjes niet te
+maken. Onze thesis culmineert in de vondst dat feedback lussen de karakteriserende criterium van
+moderne software ontwikkeling zijn. Onze model is flexibel genoeg om een brede band aan moderne
+workflows onder een dak te brengen, ondanks grote variaties in hoe projecten delen van FDD
+gebruiken en configureren.}
+
+
 
