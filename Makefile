@@ -15,8 +15,8 @@ figs/development_model_only_papers.pdf:
 	rsvg-convert -f pdf -o  figs/development_model_only_papers.pdf figs/development_model_only_papers.svg
 
 dissertation.pdf: figs force-build
-	makeglossaries dissertation
 	latexmk -xelatex dissertation
+	makeglossaries dissertation
 
 propositions.pdf: force-build
 	latexmk -xelatex propositions
