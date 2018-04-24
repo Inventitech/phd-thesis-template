@@ -20,7 +20,7 @@
           <y:Geometry height="113.0" width="113.0" x="4.0" y="123.5"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="dotted" width="3.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="italic" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="109.544921875" x="1.7275390625" y="33.546875">Initial Theory on 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="italic" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="109.544921875" x="1.7275390625" y="33.546875">Initial Model on 
 Feedback-Driven 
 Development<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
