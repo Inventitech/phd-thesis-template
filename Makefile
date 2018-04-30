@@ -6,13 +6,13 @@ all: dissertation.pdf propositions.pdf
 force-build:
 
 
-figs: figs/development_model_without_papers.pdf figs/development_model_only_papers.pdf
+figs: figs/development_model_without_papers.pdf figs/development_model_just_papers.pdf
 
 figs/development_model_without_papers.pdf:
 	rsvg-convert -f pdf -o  figs/development_model_without_papers.pdf figs/development_model_without_papers.svg
 
-figs/development_model_only_papers.pdf:
-	rsvg-convert -f pdf -o  figs/development_model_only_papers.pdf figs/development_model_only_papers.svg
+figs/development_model_just_papers.pdf:
+	rsvg-convert -f pdf -o  figs/development_model_just_papers.pdf figs/development_model_just_papers.svg
 
 dissertation.pdf: figs force-build
 	latexmk -xelatex dissertation
