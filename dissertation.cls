@@ -79,7 +79,8 @@
     \def\titleshape{\scshape}
     \def\titlestyle{\titlefont\titleshape\bfseries}
     \if@print
-        \def\headerstyle{\titlefont\titleshape\bfseries}
+        \def\headerstyle{\titlefont\titleshape}
+        %\def\headerstyle{\titlefont\titleshape\bfseries}
     \else
         \def\headerstyle{\titlefont\titleshape}
         \fi
@@ -99,7 +100,8 @@
     \def\titlefont{\rmfamily}
     \def\titleshape{}
     \if@print
-        \def\titlestyle{\titlefont\titleshape\bfseries}
+        \def\titlestyle{\titlefont\titleshape}
+        %\def\titlestyle{\titlefont\titleshape\bfseries}
     \else
         \def\titlestyle{\titlefont\titleshape}
     \fi
@@ -128,7 +130,8 @@
 %% for the thumb indices.
 \definecolor{anthracite}{cmyk}{0,0,0,0.8}
 \if@print
-    \colorlet{title}{anthracite}
+    \colorlet{title}{tudelft-cyan}
+    %\colorlet{title}{anthracite}
 \else
     \colorlet{title}{tudelft-cyan}
 \fi
