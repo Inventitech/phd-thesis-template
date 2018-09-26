@@ -285,10 +285,12 @@
 %% Page style for title pages.
 \fancypagestyle{plain}{%
     \fancyhf{}
-    \renewcommand*\headrulewidth{0pt}
+    %\renewcommand*\headrulewidth{0pt}
     \renewcommand*\footrulewidth{0pt}
     \fancyhead{\cropmarks}
-    \fancyfoot[C]{\titlefont\thepage}
+    %\fancyfoot[C]{\titlefont\thepage}
+    \fancyhead[LE]{\cropmarks\lthumb\titlefont\color{thumb}\thepage}
+    \fancyhead[RO]{\cropmarks\rthumb\titlefont\color{thumb}\thepage}
 }
 
 %% Fancy style for the main matter.
