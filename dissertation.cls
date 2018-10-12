@@ -144,7 +144,7 @@
         papersize = {173mm,246mm},
         layoutsize = {167mm,240mm},
         layoutoffset = {3mm,11mm},
-        bindingoffset = 1mm
+        bindingoffset = 2mm
     }
 \else
     \geometry{papersize={170mm,240mm}}
@@ -231,7 +231,7 @@
     \ifthumb%
         \begin{tikzpicture}[remember picture,overlay]
             \coordinate (top margin) at (0pt,1in+\topmargin+\headheight+\headsep);
-            \coordinate (left margin) at (1in+\evensidemargin,0pt);
+            \coordinate (left margin) at (1.1in+\evensidemargin,0pt);
             %% Calculate the corners of the thumb index based on the current
             %% chapter number.
             \coordinate (top left) at ($(current page.north west)-(top margin)-(0pt,\value{chapter}\thumbvspace-\thumbvspace)$);
@@ -256,7 +256,7 @@
     \ifthumb%
         \begin{tikzpicture}[remember picture,overlay]
             \coordinate (top margin) at (0pt,1in+\topmargin+\headheight+\headsep);
-            \coordinate (right margin) at (1in+\evensidemargin,0pt);
+            \coordinate (right margin) at (1.1in+\evensidemargin,0pt);
             %% Calculate the corners of the thumb index based on the current
             %% chapter number.
             \coordinate (top right) at ($(current page.north east)-(top margin)-(0pt,\value{chapter}\thumbvspace-\thumbvspace)$);
