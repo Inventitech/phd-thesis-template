@@ -144,13 +144,15 @@
         papersize = {173mm,246mm},
         layoutsize = {167mm,240mm},
         layoutoffset = {3mm,11mm},
-        bindingoffset = -3mm
+        bindingoffset = 1mm
     }
 \else
     \geometry{papersize={170mm,240mm}}
 \fi
 %% We decrease the margins slightly from the default (scale = 0.7).
 \geometry{hscale=0.75,vscale=0.8}
+
+\geometry{textwidth=127.4818mm}
 
 %% Redefine the title command to accept an optional subtitle.
 \renewcommand*\title[2][]{%
