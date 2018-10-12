@@ -144,7 +144,7 @@
         papersize = {173mm,246mm},
         layoutsize = {167mm,240mm},
         layoutoffset = {3mm,11mm},
-        bindingoffset = 2mm
+        bindingoffset = 3mm
     }
 \else
     \geometry{papersize={170mm,240mm}}
