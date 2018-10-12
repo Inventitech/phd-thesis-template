@@ -128,7 +128,7 @@
 %% Use TU Delft cyan as the color for titles, unless the 'print' option is
 %% specified, in which case we use anthracite, a dark gray, which is also used
 %% for the thumb indices.
-\definecolor{anthracite}{cmyk}{0,0,0,0.8}
+\definecolor{anthracite}{cmyk}{0,0,0,1}
 \if@print
     \colorlet{title}{tudelft-cyan}
     %\colorlet{title}{anthracite}
@@ -143,7 +143,7 @@
     \geometry{
         papersize = {173mm,246mm},
         layoutsize = {167mm,240mm},
-        layoutoffset = {3mm,3mm},
+        layoutoffset = {3mm,11mm},
         bindingoffset = -3mm
     }
 \else
