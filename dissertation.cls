@@ -299,12 +299,12 @@
 \fancypagestyle{mainmatter}{%
     \fancyhf{}
     %% Page numbers on the top left and top right.
-    \fancyhead[LE]{\cropmarks\lthumb\titlefont\color{thumb}\thepage}
-    \fancyhead[RO]{\cropmarks\rthumb\titlefont\color{thumb}\thepage}
+    \fancyhead[LE]{\cropmarks\lthumb\fontsize{8.5pt}{8.5pt}\titlefont\color{thumb}\thepage}
+    \fancyhead[RO]{\cropmarks\rthumb\fontsize{8.5pt}{8.5pt}\titlefont\color{thumb}\thepage}
     %% Chapter name on the left (even) page.
-    \fancyhead[RE]{\titlefont\titleshape\color{thumb}\nouppercase{\leftmark}}
+    \fancyhead[RE]{\fontsize{8.5pt}{8.5pt}\titlefont\titleshape\color{thumb}\nouppercase{\leftmark}}
     %% Section name on the right (odd) page.
-    \fancyhead[LO]{\titlefont\titleshape\color{thumb}\nouppercase{\rightmark}}
+    \fancyhead[LO]{\fontsize{8.5pt}{8.5pt}\titlefont\titleshape\color{thumb}\nouppercase{\rightmark}}
 }
 
 %% The mainmatter style is default for normal pages.
