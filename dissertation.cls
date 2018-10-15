@@ -144,13 +144,15 @@
         papersize = {173mm,246mm},
         layoutsize = {167mm,240mm},
         layoutoffset = {3mm,11mm},
-        bindingoffset = -3mm
+        bindingoffset = 3mm
     }
 \else
     \geometry{papersize={170mm,240mm}}
 \fi
 %% We decrease the margins slightly from the default (scale = 0.7).
 \geometry{hscale=0.75,vscale=0.8}
+
+\geometry{textwidth=127.4818mm}
 
 %% Redefine the title command to accept an optional subtitle.
 \renewcommand*\title[2][]{%
@@ -229,7 +231,7 @@
     \ifthumb%
         \begin{tikzpicture}[remember picture,overlay]
             \coordinate (top margin) at (0pt,1in+\topmargin+\headheight+\headsep);
-            \coordinate (left margin) at (1in+\evensidemargin,0pt);
+            \coordinate (left margin) at (1.1in+\evensidemargin,0pt);
             %% Calculate the corners of the thumb index based on the current
             %% chapter number.
             \coordinate (top left) at ($(current page.north west)-(top margin)-(0pt,\value{chapter}\thumbvspace-\thumbvspace)$);
@@ -254,7 +256,7 @@
     \ifthumb%
         \begin{tikzpicture}[remember picture,overlay]
             \coordinate (top margin) at (0pt,1in+\topmargin+\headheight+\headsep);
-            \coordinate (right margin) at (1in+\evensidemargin,0pt);
+            \coordinate (right margin) at (1.1in+\evensidemargin,0pt);
             %% Calculate the corners of the thumb index based on the current
             %% chapter number.
             \coordinate (top right) at ($(current page.north east)-(top margin)-(0pt,\value{chapter}\thumbvspace-\thumbvspace)$);
@@ -297,12 +299,12 @@
 \fancypagestyle{mainmatter}{%
     \fancyhf{}
     %% Page numbers on the top left and top right.
-    \fancyhead[LE]{\cropmarks\lthumb\titlefont\color{thumb}\thepage}
-    \fancyhead[RO]{\cropmarks\rthumb\titlefont\color{thumb}\thepage}
+    \fancyhead[LE]{\cropmarks\lthumb\fontsize{8.5pt}{8.5pt}\titlefont\color{thumb}\thepage}
+    \fancyhead[RO]{\cropmarks\rthumb\fontsize{8.5pt}{8.5pt}\titlefont\color{thumb}\thepage}
     %% Chapter name on the left (even) page.
-    \fancyhead[RE]{\titlefont\titleshape\color{thumb}\nouppercase{\leftmark}}
+    \fancyhead[RE]{\fontsize{8.5pt}{8.5pt}\titlefont\titleshape\color{thumb}\nouppercase{\leftmark}}
     %% Section name on the right (odd) page.
-    \fancyhead[LO]{\titlefont\titleshape\color{thumb}\nouppercase{\rightmark}}
+    \fancyhead[LO]{\fontsize{8.5pt}{8.5pt}\titlefont\titleshape\color{thumb}\nouppercase{\rightmark}}
 }
 
 %% The mainmatter style is default for normal pages.
