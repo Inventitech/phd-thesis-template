@@ -147,9 +147,8 @@
         bindingoffset = 3mm
     }
 \else
-    \geometry{papersize = {173mm,246mm},
-        layoutsize = {167mm,240mm},
-        layoutoffset = {3mm,11mm}}
+\geometry{papersize = {170mm,240mm},
+        layoutoffset = {0mm,7mm}}
 \fi
 %% We decrease the margins slightly from the default (scale = 0.7).
 \geometry{hscale=0.75,vscale=0.8}
