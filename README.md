@@ -2,9 +2,11 @@
 
 This is an improved version of the [TU Delft PhD thesis
 template,](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/)
-versioned `ff9d073` (from July 2nd, 2015). It makes a number of
-improvements to increase both on- and off-screen (printing) quality,
-as well as reduce printing costs.
+versioned `ff9d073` (from July 2nd, 2015). It features a number of
+changes to increase both on- and off-screen (printing) quality, as
+well as reduce printing costs. The layout is very well-readable, but
+rather on the low end of font size and page utilization (i.e., if
+anything, I would recommend to increase font size or page margins).
 
 Specifically, it makes these key improvements over the TU Delft house
 style:
@@ -18,4 +20,5 @@ style:
 - It keeps a consistent style of reporting page numbers on top of pages.
 - The screen and print versions of the PDF resemble each other more, while pertaining the respective benefits of each format (for example, for on-screen PDFs, no offset binding adjustment is needed).
 - The propositions page can now fit a bigger amount of text. Moreover, the format of the propositions page now fits inside the thesis, instead of being the same size (which would stand outside the printed book).
+- It changes a couple of questionable defaults, such as the copyright notice by the author.
 - It includes commands to generate ready-to-be-printed PDFs with all fonts embedded, a typical requirement to publish PDFs.
