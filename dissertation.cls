@@ -108,6 +108,25 @@
     \def\headerstyle{\titlestyle}
 \fi
 
+\RequirePackage{paralist}
+\RequirePackage[noabbrev]{cleveref}
+\Crefname{enumi}{Step}{Steps}
+\crefname{enumi}{step}{steps}
+
+\RequirePackage{pbox}
+\RequirePackage{tabularx}
+\RequirePackage{soul}
+
+\RequirePackage{array}
+
+\RequirePackage{wrapfig}
+
+\RequirePackage{pifont}
+
+\RequirePackage{textcomp}
+\RequirePackage{slashbox}
+
+
 %% Define the TU Delft house style colors.
 \definecolor{tudelft-cyan}{cmyk}{1,0,0,0}
 \definecolor{tudelft-black}{cmyk}{0,0,0,1}
