@@ -29,7 +29,7 @@
 \RequirePackage{ifxetex}
 \ifxetex
     \RequirePackage[xetex]{geometry}
-    \RequirePackage[xetex]{graphicx}
+    %\RequirePackage[xetex]{graphicx}
     %\usepackage[bookmarks=false,hidelinks]{hyperref}
     \RequirePackage[xetex,bookmarks=false,hidelinks]{hyperref}
     \RequirePackage{fontspec}
@@ -38,11 +38,11 @@
 \else
     \ifpdf
         \RequirePackage[pdftex]{geometry}
-        \RequirePackage[pdftex]{graphicx}
+        %\RequirePackage[pdftex]{graphicx}
         \RequirePackage[pdftex,bookmarks=false,hidelinks]{hyperref}
     \else
         \RequirePackage[dvips]{geometry}
-        \RequirePackage[dvips]{graphicx}
+        %\RequirePackage[dvips]{graphicx}
         \RequirePackage[hypertex,bookmarks=false,hidelinks]{hyperref}
         \fi
     \RequirePackage[utf8]{inputenc}
