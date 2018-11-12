@@ -10,6 +10,7 @@
 
 \LoadClass[10pt]{book}
 
+%% Import a lot of packages
 \RequirePackage{fontawesome}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -205,6 +206,38 @@
 
 \RequirePackage{relsize}
 \renewcommand*{\UrlFont}{\ttfamily\relax}
+
+\RequirePackage{wasysym}
+\RequirePackage{amssymb}
+\RequirePackage{mathptmx}
+
+% number circles. They go well together with my favorite way of
+% labeling stuff in pictures.
+\RequirePackage{tikz}
+
+\RequirePackage{marvosym}
+\RequirePackage{pbox}
+
+\RequirePackage{multicol}
+
+\RequirePackage{algorithm}
+\RequirePackage{algpseudocode}
+\newcommand{\var}[1]{{\ttfamily#1}}% variable
+
+\newcommand{\ahref}[2]{\href{#1}{\nolinkurl{#2}}}
+\newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.33pt}\scriptsize{\raisebox{-.1pt}{#1}}}}}
+
+\RequirePackage[outdir=./img/]{epstopdf}
+\RequirePackage[export]{adjustbox}
+
+\RequirePackage[nomain,acronym,nonumberlist,style=list]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+
+%% Stop importing packages
+
+
+% Advanced Hyphenation
+\clubpenalty=1000
+\widowpenalty=1000
 
 
 
