@@ -127,6 +127,88 @@
 \RequirePackage{slashbox}
 
 
+\RequirePackage{mdframed}
+\mdfsetup{skipbelow=3pt,skipabove=3pt,innerleftmargin=2.5pt,innerrightmargin=2.5pt,innertopmargin=2.5pt,innerbottommargin=2.5pt}
+\let\oldmdframed\mdframed
+\def\mdframed{\oldmdframed\noindent\ignorespaces}
+
+\RequirePackage{microtype}
+\RequirePackage{multirow}
+
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{mgreen}{HTML}{009901}
+
+\RequirePackage{listings}
+
+\lstset{ %
+  backgroundcolor=\color{light-gray},   % choose the background color; you must add \RequirePackage{color} or \RequirePackage{xcolor}
+  %  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  %  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  numberstyle=\tiny,
+  breaklines        = true,
+  breakatwhitespace = true,
+  breakindent       = 2ex,
+  escapechar        = *,
+  basicstyle=\scriptsize\ttfamily
+}
+
+% Setup of cref/lstlisting
+\renewcommand{\lstlistingname}{Example}
+\crefname{lstlisting}{Example}{Examples}
+
+% number circles. They go well together with my favorite way of
+% labeling stuff in pictures.
+% Alternate circled command that I found on StackExchange but did not
+% find aesthatically pleasing, so I created my own
+%\newcommand*\circled[1]{\tikz[baseline={(char.base)}]{
+%\node[shape=circle,draw,inner sep=0.8pt] (char) {\tiny {#1}};}}
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\RequirePackage{subfig}
+%% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
+\RequirePackage[section]{placeins}
+% declare the path(s) where your graphic files are
+\graphicspath{{figs/},{asats/figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/},{debugging/figs/},{debugging/img/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+
+\RequirePackage{enumitem}
+%% \setlist{before=\setlength{\rightmargin}{0.17cm}}
+
+%% \setlist[enumerate]{
+%%   nolistsep,label=\arabic{*}),ref=\arabic{*},leftmargin=0.65cm,noitemsep
+%% }
+
+%% \setlist[itemize]{
+%%   nolistsep,label=\arabic{*}),ref=\arabic{*},noitemsep
+%% }
+
+\newlist{rqlist}{itemize}{2}
+\setlist[rqlist]{
+  nolistsep,leftmargin=1.65cm,rightmargin=0.9cm
+}
+
+\RequirePackage{framed}
+\let\oldframed\framed
+\def\framed{\oldframed\noindent\ignorespaces}
+
+\RequirePackage{booktabs}
+
+\RequirePackage{relsize}
+\renewcommand*{\UrlFont}{\ttfamily\relax}
+
+
+
+
 %% Define the TU Delft house style colors.
 \definecolor{tudelft-cyan}{cmyk}{1,0,0,0}
 \definecolor{tudelft-black}{cmyk}{0,0,0,1}
