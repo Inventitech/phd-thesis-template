@@ -40,3 +40,7 @@ dissertation house style: It ...
 - includes commands to generate ready-to-be-printed PDFs with all fonts embedded, a typical requirement to publish PDFs.
 - is also highly recommend to use the [LaTeX URL Eternalizer](https://github.com/Inventitech/url-eternalizer).
 - comes with a useful set of predefined commands, such as `circled`, `ahref` and useful predefines for `lstlisting`s and such. 
+
+## Setup and Installation
+
+See the original [README](README.txt).
