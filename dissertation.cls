@@ -10,7 +10,7 @@
 
 \LoadClass[10pt]{book}
 
-%% Import a lot of packages
+%% Import packages
 \RequirePackage{fontawesome}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -162,14 +162,6 @@
 \renewcommand{\lstlistingname}{Example}
 \crefname{lstlisting}{Example}{Examples}
 
-% number circles. They go well together with my favorite way of
-% labeling stuff in pictures.
-% Alternate circled command that I found on StackExchange but did not
-% find aesthatically pleasing, so I created my own
-%\newcommand*\circled[1]{\tikz[baseline={(char.base)}]{
-%\node[shape=circle,draw,inner sep=0.8pt] (char) {\tiny {#1}};}}
-
-
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \RequirePackage{subfig}
@@ -225,6 +217,8 @@
 \newcommand{\var}[1]{{\ttfamily#1}}% variable
 
 \newcommand{\ahref}[2]{\href{#1}{\nolinkurl{#2}}}
+% number circles. They go well together with my favorite way of
+% labeling stuff in pictures.
 \newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.33pt}\scriptsize{\raisebox{-.1pt}{#1}}}}}
 
 \RequirePackage[outdir=./img/]{epstopdf}
@@ -238,9 +232,6 @@
 % Advanced Hyphenation
 \clubpenalty=1000
 \widowpenalty=1000
-
-
-
 
 %% Define the TU Delft house style colors.
 \definecolor{tudelft-cyan}{cmyk}{1,0,0,0}
@@ -273,7 +264,6 @@
 
 %% Set the paper size to 17 by 24 cm, approximately halfway between A4 and A5.
 \if@print
-    %% In print mode we add a 3 mm bleed on the outside of the page.
     \geometry{
         papersize = {173mm,246mm},
         layoutsize = {167mm,240mm},
