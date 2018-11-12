@@ -3,7 +3,7 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y texlive-fonts-recommended
   texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
-  texlive-font-utils texlive-full graphviz fonts-font-awesome texlive-fonts-extra texlive-math-extra texlive-lang-dutch texlive-lang-english texlive-latex-extra texlive-xetex
+  texlive-font-utils texlive-full graphviz fonts-font-awesome texlive-fonts-extra texlive-math-extra texlive-lang-dutch texlive-lang-english texlive-latex-extra texlive-xetex fonts-inconsolata
 
 script:
 - make
