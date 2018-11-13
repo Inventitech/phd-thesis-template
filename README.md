@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/Inventitech/phd-thesis-template.svg?token=1pPnTvKwseJq7cTLeeFE&branch=master)](https://travis-ci.com/Inventitech/phd-thesis-template)
 
 This is an improved version of the [TU Delft PhD thesis
-template,](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/). It
+template](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/). It
 features a number of changes to increase both on- and off-screen
 (printing) quality, as well as reduce printing costs. The layout is
 very well-readable, but rather close to the low limits for font size
