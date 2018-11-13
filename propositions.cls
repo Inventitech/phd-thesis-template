@@ -92,7 +92,7 @@
     \setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
     \setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
     \setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
-    \setmonofont[Scale=MatchLowercase]{inconsolata}
+    \setmonofont[Scale=MatchLowercase, Path=fonts/inconsolata/]{Inconsolata-Regular.ttf}
     %% The default style for text is Tahoma (sans-serif).
     %\renewcommand*\familydefault{\sfdefault}
     %% The default style for titles is Bookman Old Style (serif).
