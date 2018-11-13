@@ -3,10 +3,7 @@
 [![Build Status](https://travis-ci.com/Inventitech/phd-thesis-template.svg?token=1pPnTvKwseJq7cTLeeFE&branch=master)](https://travis-ci.com/Inventitech/phd-thesis-template)
 
 This is an improved version of the [TU Delft PhD thesis
-template,](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/)
-based on version `ff9d073` (dissertation template from July 2nd, 2015,
-strangely referred to in the TeX document as '2013/07/08 v1.0 TU Delft
-dissertation class'), which was the latest available on 13-11-2018. It
+template,](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/). It
 features a number of changes to increase both on- and off-screen
 (printing) quality, as well as reduce printing costs. The layout is
 very well-readable, but rather close to the low limits for font size
@@ -18,7 +15,7 @@ recommend to increase font size or page margins).
 I did not create the original template. However, I would appreciate it
 if you did keep the note that you are using this adopted version of
 the template, as it was a lot of work to create. Moreover, would you
-send me a message (moritzbeller -ÄT- gmx -DOT- de) or create an
+send me a message (moritzbeller -AT- gmx -DOT- de) or create an
 issue/PR that you are using this style, together with your expected
 defense date, university and research group?
 
@@ -69,3 +66,10 @@ See the original [README](README.txt).
 There are three document options to the provided dissertation.cls style -- be sure to use `print` when sending to the printer.
 
 Mac users will have to install the Libertinus and Inconsolata fonts on their systems.
+
+## Version
+
+This template is based on commit `ff9d073` of TU Delft's template
+(dissertation template from July 2nd, 2015, strangely referred to in
+the TeX document as '2013/07/08 v1.0 TU Delft dissertation class'),
+which was the latest available on 13-11-2018.
