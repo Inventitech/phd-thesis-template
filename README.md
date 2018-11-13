@@ -4,20 +4,17 @@
 
 This is an improved version of the [TU Delft PhD thesis
 template](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/). It
-features a number of changes to increase both on- and off-screen
-(printing) quality, as well as reduce printing costs. The layout is
-very well-readable, but rather close to the low limits for font size
-and page utilization that I would use (i.e., if anything, I would
-recommend to increase font size or page margins).
+features a large number of changes to increase both on- and off-screen
+(printing) quality, as well as reduce printing costs. 
 
 ## How to pay attribution
 
 I did not create the original template. However, I would appreciate it
 if you did keep the note that you are using this adopted version of
-the template, as it was a lot of work to create. Moreover, would you
-send me a message (moritzbeller -AT- gmx -DOT- de) or create an
-issue/PR that you are using this style, together with your expected
-defense date, university and research group?
+the template. Moreover, would you send me a message (moritzbeller -AT-
+gmx -DOT- de) or create an issue/PR that you are using this style,
+together with your expected defense date, university and research
+group?
 
 ## Theses using this Style
 Moritz Beller, 2018-11-23, Software Engineering Research Group, TU Delft
@@ -36,14 +33,21 @@ To get a full picture of how this style looks, have a look at [my PhD
 thesis](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a1ee-3b085d110466?collection=research),
 which is set using the defaults in this repository. Note that there
 are small differences between the online and print versions (such as
-cutter's marks to trim pages and page alignment).
+cutter's marks to trim pages and page alignment on the print
+version). These are hard to get right, and I optimized using two
+physical proof prints of my thesis.
+
+The layout in this repository is very well-readable, but rather close
+to the low limits for font size and page utilization that I would use
+(i.e., if anything, I would recommend to increase font size, line
+height or page margins).
 
 ## Key Improvements
 
-Specifically, it makes these key improvements over the TU Delft
-dissertation house style: It ...
+Specifically, the changes in this template make these key improvements
+over the TU Delft dissertation house style: It ...
 
-- actually compiles (well, at least on the tested Linux systems).
+- actually compiles (see CI).
 - has been used successfully in my dissertation and been approved by the TU Delft Graduate School.
 - makes the page layout much better suited to printing, because of an increased binding offset width. Text does not go into the binding fold of the book. The writable part of the page is also centered better when printed.
 - uses much nicer fonts for on- and off-screen readability, namely [Libertinus](https://github.com/libertinus-fonts/libertinus) for regular text and [Inconsolata](https://fonts.google.com/specimen/Inconsolata) for mono-spaced elements such as source code listings.
