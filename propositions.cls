@@ -1,5 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{propositions}[2013/07/08 v1.0 TU Delft dissertation class]
+\ProvidesClass{propositions}[2018/11/13 v2.0 TU Delft dissertation class by MB]
+%% Changes over the 2013/07/08 v1.0 TU Delft dissertation class by Moritz Beller, moritzbeller -AT- gmx -DOT- de
 
 \newif\if@nativefonts
 \DeclareOption{nativefonts}{\@nativefontstrue}
@@ -28,8 +29,6 @@
 \RequirePackage{ifxetex}
 \ifxetex
     \RequirePackage[xetex]{geometry}
-%    \RequirePackage[xetex]{graphicx}
-    %\usepackage[bookmarks=false,hidelinks]{hyperref}
     \RequirePackage[xetex,bookmarks=false,hidelinks]{hyperref}
     \RequirePackage{fontspec}
     \RequirePackage{xltxtra}
@@ -37,11 +36,9 @@
 \else
     \ifpdf
         \RequirePackage[pdftex]{geometry}
-%        \RequirePackage[pdftex]{graphicx}
         \RequirePackage[pdftex,bookmarks=false,hidelinks]{hyperref}
     \else
         \RequirePackage[dvips]{geometry}
-%        \RequirePackage[dvips]{graphicx}
         \RequirePackage[hypertex,bookmarks=false,hidelinks]{hyperref}
         \fi
     \RequirePackage[utf8]{inputenc}

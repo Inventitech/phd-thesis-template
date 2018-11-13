@@ -1,5 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{dissertation}[2013/07/08 v1.0 TU Delft dissertation class]
+\ProvidesClass{dissertation}[2018/11/13 v2.0 TU Delft dissertation class by MB]
+%% Changes over the 2013/07/08 v1.0 TU Delft dissertation class by Moritz Beller, moritzbeller -AT- gmx -DOT- de
 
 \newif\if@nativefonts
 \DeclareOption{nativefonts}{\@nativefontstrue}

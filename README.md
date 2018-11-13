@@ -1,13 +1,29 @@
 # Improved TU Delft PhD Thesis Template
 
+[![Build Status](https://travis-ci.com/Inventitech/phd-thesis-template.svg?token=1pPnTvKwseJq7cTLeeFE&branch=master)](https://travis-ci.com/Inventitech/phd-thesis-template)
+
 This is an improved version of the [TU Delft PhD thesis
 template,](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/)
-versioned `ff9d073` (dissertation template from July 2nd, 2015). It
+based on version `ff9d073` (dissertation template from July 2nd, 2015,
+strangely referred to in the TeX document as '2013/07/08 v1.0 TU Delft
+dissertation class'), which was the latest available on 13-11-2018. It
 features a number of changes to increase both on- and off-screen
 (printing) quality, as well as reduce printing costs. The layout is
 very well-readable, but rather close to the low limits for font size
-and page utilization (i.e., if anything, I would recommend to increase
-font size or page margins).
+and page utilization that I would use (i.e., if anything, I would
+recommend to increase font size or page margins).
+
+## How to pay attribution
+
+I did not create the original template. However, I would appreciate it
+if you did keep the note that you are using this adopted version of
+the template, as it was a lot of work to create. Moreover, would you
+send me a message (moritzbeller -ÄT- gmx -DOT- de) or create an
+issue/PR that you are using this style, together with your expected
+defense date, university and research group?
+
+## Theses using this Style
+Moritz Beller, 2018-11-23, Software Engineering Research Group, TU Delft
 
 ## Style
 
@@ -19,7 +35,11 @@ Here is a side-by-side comparison of the two different styles.
 ![](readme-pics/prev_page.png) | ![](readme-pics/new_page.png)
 
 
-To get a full picture of what this style looks, have a look at [my PhD thesis](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a1ee-3b085d110466?collection=research), which is set using the defaults in this repository. Note that there are small differences between the online and print versions (such as cutter's marks to trim pages and page alignment).
+To get a full picture of how this style looks, have a look at [my PhD
+thesis](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a1ee-3b085d110466?collection=research),
+which is set using the defaults in this repository. Note that there
+are small differences between the online and print versions (such as
+cutter's marks to trim pages and page alignment).
 
 ## Key Improvements
 
@@ -37,10 +57,15 @@ dissertation house style: It ...
 - makes the screen and print versions of the PDF resemble each other more, while keeping the respective benefits of each format (for example, for on-screen PDFs, no offset binding adjustment is needed).
 - makes the propositions page now fit a bigger amount of text. Moreover, the format of the propositions page now fits inside the thesis, instead of being the same size (which would stand out!).
 - changes a couple of questionable defaults, such as the copyright notice by the author.
+- uses glyphs and symbols to refer to papers, and gives presets for the CV, list of publications and the IPA dissertation series.
 - includes commands to generate ready-to-be-printed PDFs with all fonts embedded, a typical requirement to publish PDFs.
 - is also highly recommend to use the [LaTeX URL Eternalizer](https://github.com/Inventitech/url-eternalizer).
-- comes with a useful set of predefined commands, such as `circled`, `ahref` and useful predefines for `lstlisting`s and such. 
+- comes with a useful set of predefined commands, such as `circled`, `ahref` and useful predefines for `lstlisting` and such. 
 
 ## Setup and Installation
 
 See the original [README](README.txt).
+
+There are three document options to the provided dissertation.cls style -- be sure to use `print` when sending to the printer.
+
+Mac users will have to install the Libertinus and Inconsolata fonts on their systems.
