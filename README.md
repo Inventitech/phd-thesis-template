@@ -5,7 +5,8 @@
 This is an improved version of the [TU Delft PhD thesis
 template](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/). It
 features a large number of changes to increase both on- and off-screen
-(printing) quality, as well as reduce printing costs. 
+(printing) quality, as well as reduce printing costs. It is a
+double-sided, colored dissertation style with hyperlinks.
 
 ## How to pay attribution
 
@@ -21,7 +22,7 @@ Moritz Beller, 2018-11-23, Software Engineering Research Group, TU Delft
 
 ## Style
 
-Here is a side-by-side comparison of the two different styles.
+Here is a side-by-side comparison of the two styles.
 
 | Old Style       |  New (this template) |
 :----------------:|:---------------------:
@@ -34,7 +35,7 @@ thesis](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a
 which is set using the defaults in this repository. Note that there
 are small differences between the online and print versions (such as
 cutter's marks to trim pages and page alignment on the print
-version). These are hard to get right, and I optimized using two
+version). These are hard to get right, and I optimized them using two
 physical proof prints of my thesis.
 
 The layout in this repository is very well-readable, but rather close
@@ -76,4 +77,5 @@ Mac users will have to install the Libertinus and Inconsolata fonts on their sys
 This template is based on commit `ff9d073` of TU Delft's template
 (dissertation template from July 2nd, 2015, strangely referred to in
 the TeX document as '2013/07/08 v1.0 TU Delft dissertation class'),
-which was the latest available on 13-11-2018.
+which was the latest available on 13-11-2018. Unfortunately, I did not
+have access to their repository.
