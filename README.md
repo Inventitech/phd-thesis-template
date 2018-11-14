@@ -8,7 +8,7 @@ features a large number of changes to increase both on- and off-screen
 (printing) quality, as well as reduce printing costs. It is a
 double-sided, colored dissertation style with hyperlinks.
 
-## How to pay attribution
+## How to Pay Attribution
 
 I did not create the original template. However, I would appreciate it
 if you did keep the note that you are using this adopted version of
@@ -17,7 +17,7 @@ gmx -DOT- de) or create an issue/PR that you are using this style,
 together with your expected defense date, university and research
 group?
 
-## Theses using this Style
+## Theses Using This Style
 Moritz Beller, 2018-11-23, Software Engineering Research Group, TU Delft
 
 ## Style
