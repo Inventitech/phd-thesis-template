@@ -18,7 +18,7 @@ together with your expected defense date, university and research
 group?
 
 ## Theses Using This Style
-Moritz Beller, 2018-11-23, Software Engineering Research Group, TU Delft
+[Moritz Beller](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a1ee-3b085d110466/datastream/OBJ/download), 2018-11-23, Software Engineering Research Group, TU Delft
 
 ## Style
 
