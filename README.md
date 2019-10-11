@@ -19,6 +19,7 @@ group?
 
 ## Theses Using This Style
 [Moritz Beller](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a1ee-3b085d110466/datastream/OBJ/download), 2018-11-23, Software Engineering Research Group, TU Delft
+[Anand Sawant](https://doi.org/10.4233/uuid:3d7bc400-2447-4a88-8768-3025d7b54b7f), 2019-10-10, Software Engineering Research Group, TU Delft
 
 ## Style
 
