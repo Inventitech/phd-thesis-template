@@ -1,12 +1,11 @@
 # Improved TU Delft PhD Thesis Template
 
-[![Build Status](https://travis-ci.com/Inventitech/phd-thesis-template.svg?token=1pPnTvKwseJq7cTLeeFE&branch=master)](https://travis-ci.com/Inventitech/phd-thesis-template)
-
 This is an improved version of the [TU Delft PhD thesis
 template](https://www.tudelft.nl/en/tu-delft-corporate-design/downloads/). It
 features a large number of changes to increase both on- and off-screen
-(printing) quality, as well as reduce printing costs. It is a
-double-sided, colored dissertation style with hyperlinks.
+readability and quality, as well as reduce printing costs. It is a
+double-sided, colored dissertation style with hyperlinks (although many of
+these parameters can be easily changed).
 
 ## How to Pay Attribution
 
@@ -20,6 +19,9 @@ group?
 ## Theses Using This Style
 * [Moritz Beller](https://repository.tudelft.nl/islandora/object/uuid:b2946104-2092-42bb-a1ee-3b085d110466/datastream/OBJ/download), 2018-11-23, Software Engineering Research Group, TU Delft
 * [Anand Sawant](https://doi.org/10.4233/uuid:3d7bc400-2447-4a88-8768-3025d7b54b7f), 2019-10-10, Software Engineering Research Group, TU Delft
+* Davide Spadini, Software Engineering Research Group, 2021, TU Delft
+* Vladimir Kovalenko, Software Engineering Research Group, 2021, TU Delft
+* Alex Salazar, Computer Science Intelligent Systems, TU Delft 
 
 ## Style
 
