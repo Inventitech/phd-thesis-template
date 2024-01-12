@@ -6,6 +6,12 @@
 %% We use the 'etaremune' environment (the reverse of 'enumerate') to get a
 %% numbered list of publications in reverse chronological order. If the list of
 %% authors is long, it might be useful to emphasize your own name with \textbf.
+
+%% If your publications are in your BibTex file, you can use bibentry to list them here. Include in your preamble:
+%% \usepackage{bibentry}
+%% \nobibliography*  % tells bibentry to reuse the available bibliography data
+%% Then here list your publications as:
+%% \item[\faFileTextO~~1.] \bibentry{<citekey>}.
 \begin{etaremune}{\small
 \item[\faFileTextO~~1.] \emph{Moritz Beller}: Toward an Empirical Theory of
   Feedback-Driven Development. To appear in 40th International Conference on
