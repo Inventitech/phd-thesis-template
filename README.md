@@ -22,6 +22,7 @@ group?
 * Davide Spadini, Software Engineering Research Group, 2021, TU Delft
 * Vladimir Kovalenko, Software Engineering Research Group, 2021, TU Delft
 * Alex Salazar, Computer Science Intelligent Systems, TU Delft 
+* [Carolin Brandt](https://doi.org/10.4233/uuid:aedfd7b6-f9ae-4b76-9122-29e43995d36f), 2024-07-08, Software Engineering Research Group, TU Delft
 
 ## Style
 
